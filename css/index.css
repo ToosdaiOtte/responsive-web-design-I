@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 880px;
   /* TB LR */
   margin: 0 auto;
 }
@@ -90,19 +90,27 @@ header {
 
 header nav {
     
-  display: inline-block;
- width: 691px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*
   vertical-align: top;
-  margin-top: 35px;
+  */
 }
 
 
 
 header nav a {
-  margin-right: 65px;
+  margin-right: 20px;
+  margin-left: 15px;
   font-size: 14px;
   color: gray;
   text-decoration: none;
+  box-sizing: border-box;
+  padding-right: 35px;
 }
 
 @media(max-width: 500px) {
@@ -126,6 +134,8 @@ header nav a:first-child {
 
 header nav a:last-child {
   margin-right: 0;
+  box-sizing: border-box;
+  padding-right: 80px;
 }
 
 header .logo {
