@@ -146,18 +146,23 @@ header .logo {
 
 /* cta */
 .cta {
-    display: flex;
-    align-items: center;
-    margin-right: 100%;
+  display: flex;
+}
+.cta .cta-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.cta .cta-text {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 77px;
-  margin-top: 120px;
+.cta .cta-text h1 {
+  margin-top: 18%;
+  margin-left: 4%;
+  font-size: 70px;
   text-align: center;
-  padding: 0px 75px;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 108px;
+  padding-top: 5%;
 }
 
 @media(max-width:800px) {
@@ -169,6 +174,17 @@ header .logo {
 }
 
 .cta .cta-text button {
+  margin-left: 188px;
+  margin-right: 142px;
+  margin-top: 14px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 3px 46px;
+  background: white;
+  font-family: 'Titillium Web';
+  /*
   background: white;
   vertical-align: top;
   margin-top: 6px;
@@ -176,6 +192,7 @@ header .logo {
   font-size: 17px;
   border: 1px solid black;
   cursor: pointer;
+  */
 }
 
 .cta .cta-text button:hover {
@@ -184,7 +201,7 @@ header .logo {
 }
 
 .cta img {
-  margin-top: 69px;
+  margin-top: 60px;
  
 }
 
