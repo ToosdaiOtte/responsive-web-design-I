@@ -1,3 +1,376 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+  .container {
+    width: 100%;
+    max-width: 880px;
+  /* TB LR */
+  margin: 0 auto;
+  }
+
+
+/* header */
+header {
+    display: flex;
+    justify-items: space-between;
+}
+
+@media(max-width: 800px) {
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+@media(max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+header nav {
+    
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*
+  vertical-align: top;
+  */
+}
+
+@media(max-width:800px) {
+  header nav {
+    display: flex;
+    margin-left: 5%;
+    
+  }
+}
+
+@media(max-width:500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+header nav a {
+  margin-right: 20px;
+  margin-left: 15px;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding-right: 35px;
+}
+
+@media(max-width: 500px) {
+    header nav a {
+      /*
+        display: flex;
+        flex-direction: column;
+       */
+        border-bottom: 1px solid grey;
+        box-sizing: border-box;
+        padding: 20px 180px;
+    }
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+@media(max-width: 500px) {
+  header nav a:first-child {
+    border-top: 1px solid grey;
+  }
+}
+
+header nav a:last-child {
+  margin-right: 0;
+  box-sizing: border-box;
+  padding-right: 80px;
+}
+
+@media(max-width: 500px) {
+  header nav a:last-child {
+    box-sizing: border-box;
+    padding-right: 180px;
+    margin-right: 20px;
+    margin-left: 15px;
+  }
+}
+
+header .logo {
+  margin-top: 25px;
+
+}
+
+
+/* cta */
+.cta {
+  display: flex;
+}
+.cta .cta-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media(max-width:800px) {
+    .cta  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       margin-right: 5%;
+    }
+}
+
+@media(max-width: 500px) {
+  .cta {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+  }
+}
+
+.cta .cta-text h1 {
+  margin-top: 18%;
+  margin-left: 4%;
+  font-size: 70px;
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 108px;
+  padding-top: 5%;
+}
+
+
+
+.cta .cta-text button {
+  margin-left: 188px;
+  margin-right: 140px;
+  margin-top: 14px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 3px 46px;
+  background: white;
+  font-family: 'Titillian Web';
+}
+
+@media(500px) {
+  .cta .cta-text button {
+    
+  
+  margin-top: 14px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 3px 46px;
+  background: white;
+  font-family: 'Titillian Web';
+  }
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+
+
+.cta img {
+  margin-top: 60px;
+ 
+}
+
+@media(max-width:800px) {
+    .cta img {
+        display: none;
+    }
+}
+
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 15px;
+}
+
+.main-content h4 {
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+
+
+.main-content .top-content {
+  display: flex;
+  
+}
+
+@media(max-width: 500px) {
+  .main-content .top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.main-content .top-content .text-content {
+  width: 410px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+@media(max-width:500px) {
+  .main-content .top-content .text-content {
+    box-sizing: border-box;
+    padding: 20px 0;
+  }
+}
+
+.main-content .top-content .text-content p {
+  margin: 0;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+    max-width: 100%;
+    margin-top: 45px;
+}
+
+
+
+.main-content .bottom-content {
+    display: flex;
+  
+}
+
+@media(max-width:500px) {
+  .main-content .bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.main-content .bottom-content .text-content {
+  /*width: 275px;*/
+  display: inline-block;
+  margin-right: 12px;
+}
+
+@media(max-width:500px) {
+  .main-content .bottom-content .text-content {
+    box-sizing: border-box;
+    padding: 20px 0;
+  }
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 32px;
+  border-top: 1px solid black;
+  padding: 14px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
 
 
